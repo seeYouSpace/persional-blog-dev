@@ -1,0 +1,6 @@
+{
+	"js_jquery": "/assets/js/lib/jquery.js",
+	"js_require": "/assets/js/lib/require.js",
+	"js_test": "/dist/js/pages/test.8aa76f79bbd589df4764.js",
+	"css_test": "/dist/style/pages/test.css"
+}

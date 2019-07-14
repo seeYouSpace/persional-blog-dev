@@ -1,0 +1,6 @@
+{
+    "watch": ["assets"],
+    "ext": "js sass css scss",
+    "exec": "npm run webpack:dev && node bin/generateAssetPathJson"
+  }
+  
