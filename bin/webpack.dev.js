@@ -5,8 +5,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const webpackUtil = require('./webpack.util');
 
-console.log(process.env.NODE_ENV)
-
 module.exports = {
     mode: 'development',
     entry: webpackUtil.makeEntry(path.join(__dirname, '../assets/js/pages')),

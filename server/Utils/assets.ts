@@ -1,13 +1,5 @@
 let distPathJsonPath = require.resolve('../../assets/dist-path.json');
-//let distPathJson = require(distPathJsonPath);
-
 import { IS_DEV, purgeCache } from './env';
-
-// if (IS_DEV){
-//     delete require.cache[distPathJsonPath];
-// }
-
-//console.log(require.cache)
 
 export function generateAssets (ejsData, head:any[], bottom?:any[]) {
     
