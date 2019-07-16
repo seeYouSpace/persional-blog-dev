@@ -12,7 +12,7 @@ export class Articles {
   @Column('text')
   brief: string;
 
-  @Column()
+  @Column('longtext')
   content: string;
 
   @OneToOne(type => ArticleType)
@@ -22,6 +22,6 @@ export class Articles {
   @Column('int')
   readingQuantity: number;
 
-  @Column()
+  @Column('datetime')
   ctime: string;
 }

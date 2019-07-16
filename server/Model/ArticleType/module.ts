@@ -9,5 +9,6 @@ import { ArticleTypeService } from './service';
     ...ArticleTypeProviders,
     ArticleTypeService
   ],
+  exports: [ArticleTypeService]
 })
 export class ArticleTypeModule {}

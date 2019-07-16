@@ -1,5 +1,5 @@
 {
-  "name": "nest-l",
+  "name": "persion-blog-dev",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -23,14 +23,20 @@
   "dependencies": {
     "@nestjs/common": "^6.0.0",
     "@nestjs/core": "^6.0.0",
+    "@nestjs/passport": "^6.1.0",
     "@nestjs/platform-express": "^6.5.2",
     "dotenv": "^8.0.0",
     "ejs": "^2.6.2",
+    "express-session": "^1.16.2",
     "joi": "^14.3.1",
+    "marked": "^0.7.0",
     "mysql": "^2.17.1",
+    "passport": "^0.4.0",
+    "passport-http-bearer": "^1.0.1",
+    "passport-local": "^1.0.0",
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",
-    "rxjs": "^6.3.3",
+    "rxjs": "^6.5.2",
     "typeorm": "^0.2.18"
   },
   "devDependencies": {
@@ -50,7 +56,7 @@
     "supertest": "^3.4.1",
     "ts-jest": "24.0.2",
     "ts-node": "8.1.0",
-    "tsconfig-paths": "3.8.0",
+    "tsconfig-paths": "^3.8.0",
     "tslint": "5.16.0",
     "typescript": "3.4.3",
     "wait-on": "^3.2.0",

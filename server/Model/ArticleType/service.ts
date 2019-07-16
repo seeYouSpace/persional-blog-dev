@@ -13,4 +13,8 @@ export class ArticleTypeService {
   async findAll(): Promise<ArticleType[]> {
     return await this.articleTypeRepository.find();
   }
+
+  async findOneById(id:number): Promise<ArticleType> {
+    return await this.articleTypeRepository.findOne(id);
+  }
 }

@@ -8,7 +8,11 @@
     "target": "es6",
     "sourceMap": true,
     "outDir": "./server-dist",
-    "baseUrl": "./",
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@server/*": ["server-dist/*"]
+    },
     "incremental": true
   },
   "exclude": ["node_modules"]

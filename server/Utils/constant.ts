@@ -6,3 +6,6 @@ export const ARTICLE_TYPE_REPOSITORY = 'ARTICLE_TYPE_REPOSITORY';
 
 // provider articles repository
 export const ARTICLES_REPOSITORY = 'ARTICLES_REPOSITORY';
+
+// provider user repository
+export const USER_REPOSITORY = 'USER_REPOSITORY';
