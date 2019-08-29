@@ -34,10 +34,10 @@ export class ListController {
     @Render('list')
     page() {
         return generateAssets({
-            word: 'hello world'
-        }, 
-        ['js_jquery', 'css_test'], 
-        ['js_test']
-      )
+                word: 'hello world'
+            }, 
+            ['js_jquery', 'css_test'], 
+            ['js_test']
+        )
     }
 }

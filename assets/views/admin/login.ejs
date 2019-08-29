@@ -1,0 +1,14 @@
+<% if (assets && assets.bottom) { %>
+    <%- include('../includes/head', {assets: assets.head}); %>
+<% } else { %>
+    <%- include('../includes/head'); %>
+<% } %>
+<body>
+    <p><%= word %></p>
+    <% if (assets && assets.bottom) { %>
+        <%- include('../includes/bottom', {assets: assets.bottom}); %>
+    <% } else { %>
+        <%- include('../includes/bottom'); %>
+    <% } %>
+</body>
+</html>

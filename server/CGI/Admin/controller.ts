@@ -1,10 +1,18 @@
-import { Controller, Request, Post, UseGuards } from '@nestjs/common';
+import { Controller, Request, Get, Post, UseGuards, Render } from '@nestjs/common';
+import { generateAssets } from '../../Utils/assets';
+import { AuthBySessionGuard } from '../../Guard/Auth/authBySession';
 
 
 @Controller('admin')
 export class AdminController {
-    @Post('login')
-    async login(@Request() req) {
-        return req;
+
+    @Get('login')
+    @Render('admin/login')
+    getLogin() {
+        return generateAssets({
+                word: 'hello login'
+            }, 
+            ['js_jquery', 'js_require']
+        )
     }
 }

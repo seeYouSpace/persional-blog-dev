@@ -10,9 +10,10 @@ export class AuthBySessionGuard implements CanActivate {
 
     async canActivate(
         context: ExecutionContext,
-    ): Promise<any> | boolean | Observable<boolean> {
+    ): Promise<any> {
         const request = context.switchToHttp().getRequest();
         if (request.session && request.session.token) {
+            // @ts-ignore
             let user = await this.userService.findOne({token: request.session.token});
             if (user) return user;
         }

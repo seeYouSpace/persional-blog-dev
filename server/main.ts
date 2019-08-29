@@ -7,7 +7,7 @@ import * as session from 'express-session';
 async function bootstrap() {
     const app = await NestFactory.create<NestExpressApplication>(ApplicationModule);
     app.useStaticAssets(join(__dirname, '../dist'), { prefix: '/dist/' });
-    app.useStaticAssets(join(__dirname, '../assets'), { prefix: '/assets/' });
+    app.useStaticAssets(join(__dirname, '../assets'), { prefix: '/assets/'});
     app.setBaseViewsDir(join(__dirname, '../assets/views'));
     app.setViewEngine('ejs');
     app.use(session({

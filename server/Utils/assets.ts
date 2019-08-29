@@ -1,7 +1,7 @@
 let distPathJsonPath = require.resolve('../../assets/dist-path.json');
 import { IS_DEV, purgeCache } from './env';
 
-export function generateAssets (ejsData, head:any[], bottom?:any[]) {
+export function generateAssets (ejsData, head:any[], bottom:any[]=[]) {
     
     let assets = {
         head: [],

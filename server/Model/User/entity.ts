@@ -1,5 +1,8 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
+export const USER_ROLE_ADMIN = 1;
+export const USER_ROLE_COMMON = 2;
+
 @Entity()
 export class User {
   @PrimaryGeneratedColumn()
@@ -14,6 +17,9 @@ export class User {
   @Column({ length: 120 })
   password: string;
 
+  @Column({default: USER_ROLE_COMMON})
+  role: number;
+
   @Column('datetime')
   ctime: string;
 
@@ -23,3 +29,4 @@ export class User {
   @Column({ length: 120 })
   token: string;
 }
+
